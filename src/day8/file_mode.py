@@ -24,4 +24,8 @@ f.close()
 # r+ or r+b
 
 # write and read
-# w+
+# w+ or w+b
+
+# append
+# a+
+# append and read
