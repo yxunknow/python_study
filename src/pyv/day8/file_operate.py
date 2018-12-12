@@ -44,7 +44,7 @@
 # f.close()
 
 # relative filepath
-# fi = open('../day7/datatype.py', mode='r', encoding='utf-8')
+# fi = open('../pyv.day7/datatype.py', mode='r', encoding='utf-8')
 # convert bytes to str in read function
 # content = fi.read()
 # print(content)

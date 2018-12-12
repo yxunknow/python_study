@@ -1,0 +1,5 @@
+hello, print is redirected into a file
+# input/output
+# input(): accept user's input
+# print(): print data to console by default
+# print redirection
