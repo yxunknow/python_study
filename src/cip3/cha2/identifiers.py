@@ -124,3 +124,22 @@
 # print(sr)
 
 # format string
+# since py3.1, the index in placeholder can be omitted
+# '{} {} {} {}'.format(arg1, arg2, arg3)
+# {} placeholder
+# {argName} named placeholder
+# 'my name is {name}'.format(name = 'chengpiao')
+
+# format method accept iterable parameter
+# li = ['a', '2', 'two']
+# '{0[1]} is {0[2]}'.format(li)
+
+
+# conversions
+# using force conversion in format function
+# !s string form
+# !r representational form
+# !a representational form but only using ascii characters
+
+# format sepcifications
+# {:25} format as length of 25 characters
