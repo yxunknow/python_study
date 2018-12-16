@@ -41,10 +41,24 @@
 
 # multi-layers nested tuple can lead confusions
 # the solution is giving names to particular index positions
-# TRAIN_NUMBER, DATE, SEAT_NUMBER = (0, 1, 2)
+# TRAIN_NUMBER, DATE, SEAT_NUMBER = (0, 1, 2)  # a tuple is unpacked to left-hand variables
 # CARRIAGE, SEAT = (0, 1)
 # ticket = ('G8586', '2018-12-16', ('12车', '8F'))
 # print(ticket[SEAT_NUMBER][CARRIAGE])  # output is '12车'
+# this trick creates too many variables and makes code ugly
+
+# named tuples
+# a named tuple can refer item by name as same with by index
+# from collections import namedtuple
+# Sale = namedtuple('Sale', 'prodctid customid date quantity price')
+# sales = list()
+# sales.append(Sale(1, 2314, '2018-12-16', 20, 100))
+# print(sales)
+# aSale = sales[0]
+# customIdOfASale = aSale.customid
+# print(customIdOfASale)
+# namedTuple._asdict() return named tuple as key-value pairs
+# print(sales[0]._asdict())
 
 
 
