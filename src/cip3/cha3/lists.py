@@ -38,4 +38,55 @@ districts = ['nanan', 'yuzhong', 'yubei', 'jiangbei', 'beibei', 'jiangjin']
 # districts.remove('jiangjin')  # delete jiangjin
 # districts.remove('dadukou')  # raises ValueError
 
+# operation on list
+# insert
+# append(x), append an item at the end of a list
+# insert(index, element), insert element at index
+# districts[1:1] = ['dadukou']  # districts.insert(1, 'dadukou')
+# districts.insert(1, 'dakukou')
+# print(districts)
+
+# delete
+# districts[1:2] = []  # delete districts[1], 'yuzhong'
+# del districts[1:2]  # delete districts[1], 'yuzhong'
+# print(districts)
+
+
+# comprehensions
+# range(start, end, step) return a range
+# li = list(range(0, 10))
+# print(li)
+# leaps = []
+# get all leap year from 1900 to 2022
+# for year in range(1900, 2022, 4):
+#     if (year % 4 ==0 and year % 100 !=0) or (year % 400 == 0):
+#         leaps.append(year)
+#
+# print(leaps)
+# list comprehensions
+# 1
+# return year between 1900-2021
+# years = [y for y in range(1900, 2022)]
+# years = list(range(1900, 2022))
+# print(years)
+# 2 with condition
+# leaps = [y for y in range(1900, 2022, 4) if (y % 4 == 0 and y % 100 != 0) or (y % 400 == 0)]
+# print(leaps)
+
+# comprehension nested
+# sex = 'MF'
+# size = 'SMLX'
+# color = 'WGB'
+# tags = []
+# for g in sex:
+#     for s in size:
+#         if g == 'F' and s == 'X':
+#             continue
+#         for c in color:
+#             tags.append('sex:{} size:{} color:{}'.format(g, s, c))
+# print(tags)
+# below code is less shorter
+# tags = ['sex:{} size:{} color:{}'.format(g, s, c) for g in sex for s in size for c in color
+#         if not (g == 'F' and s == 'X')]
+# print(tags)
 
