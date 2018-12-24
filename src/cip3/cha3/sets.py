@@ -40,5 +40,12 @@
 # keys are object references refer to hashable types and values are object references refer to any types.
 # dictionaries are mutable
 
+# ordered-dictionaries
+from collections import OrderedDict
 
+odict = OrderedDict()
+odict[1001] = 'backup'
+odict[2031] = 'shutdown'
+odict[1023] = 'gib byte'
+print(odict)
 
